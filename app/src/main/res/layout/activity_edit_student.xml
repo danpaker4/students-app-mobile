@@ -15,61 +15,75 @@
             android:layout_height="120dp"
             android:layout_gravity="center"
             android:src="@android:drawable/ic_menu_gallery"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/desc_student_image" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name:"
+            android:text="@string/label_name"
             android:layout_marginTop="16dp" />
         <EditText
             android:id="@+id/edit_student_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter name" />
+            android:minHeight="48dp"
+            android:hint="@string/hint_name"
+            android:inputType="textPersonName"
+            android:autofillHints="name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ID:"
+            android:text="@string/label_id"
             android:layout_marginTop="8dp" />
         <EditText
             android:id="@+id/edit_student_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter ID" />
+            android:minHeight="48dp"
+            android:hint="@string/hint_id"
+            android:inputType="number"
+            android:autofillHints="none" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Phone:"
+            android:text="@string/label_phone"
             android:layout_marginTop="8dp" />
         <EditText
             android:id="@+id/edit_student_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter phone"
-            android:inputType="phone" />
+            android:minHeight="48dp"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            android:autofillHints="phone" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Address:"
+            android:text="@string/label_address"
             android:layout_marginTop="8dp" />
         <EditText
             android:id="@+id/edit_student_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter address" />
+            android:minHeight="48dp"
+            android:hint="@string/hint_address"
+            android:inputType="textPostalAddress"
+            android:autofillHints="postalAddress" />
 
         <CheckBox
             android:id="@+id/edit_student_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Checked"
+            android:minHeight="48dp"
+            android:text="@string/label_checked"
             android:layout_marginTop="8dp" />
 
         <LinearLayout
+            style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -78,26 +92,32 @@
 
             <Button
                 android:id="@+id/edit_student_cancel_btn"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:layout_weight="1"
-                android:text="CANCEL"
+                android:text="@string/btn_cancel"
                 android:layout_marginEnd="4dp" />
 
             <Button
                 android:id="@+id/edit_student_delete_btn"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:layout_weight="1"
-                android:text="DELETE"
+                android:text="@string/btn_delete"
                 android:layout_marginEnd="4dp" />
 
             <Button
                 android:id="@+id/edit_student_save_btn"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:layout_weight="1"
-                android:text="SAVE" />
+                android:text="@string/btn_save" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
