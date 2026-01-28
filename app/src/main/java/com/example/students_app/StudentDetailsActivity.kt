@@ -1,4 +1,5 @@
 package com.example.students_app
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -41,7 +42,6 @@ class StudentDetailsActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-
         if (studentPos != -1 && studentPos < Model.data.size) {
             val student = Model.data[studentPos]
             findViewById<TextView>(R.id.details_student_name).text = "Name: ${student.name}"
@@ -50,7 +50,7 @@ class StudentDetailsActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.details_student_address).text = "Address: ${student.address}"
             findViewById<CheckBox>(R.id.details_student_check).isChecked = student.isChecked
         } else {
-            finish() 
+            finish()
         }
     }
 }
