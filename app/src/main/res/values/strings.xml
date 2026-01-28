@@ -13,4 +13,7 @@
     <string name="btn_delete">DELETE</string>
     <string name="btn_save">SAVE</string>
     <string name="desc_student_image">Student Image</string>
+    <string name="desc">Student Picture</string>
+    <string name="Student_Name">Student Name</string>
+    <string name="Student_Id">Student Id</string>
 </resources>
